@@ -7,3 +7,62 @@ packages:
   gitUrl: https://github.com/Sephali-Smrutisikha-IBM-1
   gitUsername: Sephali-Smrutisikha-IBM-1
   gitBranch: main
+- name: WmJDBCAdapter
+  wpmServer: https://packages.webmethods.io
+  wpmRegistry: licensed
+services:
+- serviceName: project.adapters_git.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:Database_Multi
+  packages:
+  - name: Adapters_GITProject
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+configurationVariables:
+  ? artConnection.Adapters_GITProject.project.adapters_git.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_Multi.connectionManagerSettings.poolable
+  : "false"
+  ? artConnection.Adapters_GITProject.project.adapters_git.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_Multi.connectionSettings.keyStore
+  : ""
+  ? artConnection.Adapters_GITProject.project.adapters_git.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_Multi.connectionSettings.otherProperties
+  : driverType=thin;
+  ? artConnection.Adapters_GITProject.project.adapters_git.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_Multi.connectionManagerSettings.maximumPoolSize
+  : "10"
+  ? artConnection.Adapters_GITProject.project.adapters_git.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_Multi.connectionManagerSettings.heartBeatInterval
+  : "0"
+  ? artConnection.Adapters_GITProject.project.adapters_git.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_Multi.connectionSettings.transactionType
+  : LOCAL_TRANSACTION
+  ? artConnection.Adapters_GITProject.project.adapters_git.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_Multi.connectionSettings.password
+  : "{AES}gOk3wygfWVjWqDc4SLehnQ=="
+  ? artConnection.Adapters_GITProject.project.adapters_git.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_Multi.connectionSettings.driverType
+  : ojdbc
+  ? artConnection.Adapters_GITProject.project.adapters_git.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_Multi.connectionSettings.user
+  : JDBC_BVT
+  ? artConnection.Adapters_GITProject.project.adapters_git.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_Multi.connectionSettings.datasourceClass
+  : oracle.jdbc.pool.OracleDataSource
+  ? artConnection.Adapters_GITProject.project.adapters_git.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_Multi.connectionEnabled
+  : "false"
+  ? artConnection.Adapters_GITProject.project.adapters_git.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_Multi.connectionManagerSettings.poolIncrementSize
+  : "1"
+  ? artConnection.Adapters_GITProject.project.adapters_git.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_Multi.connectionSettings.databaseName
+  : ORCL
+  ? artConnection.Adapters_GITProject.project.adapters_git.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_Multi.connectionManagerSettings.blockingTimeout
+  : "1000"
+  ? artConnection.Adapters_GITProject.project.adapters_git.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_Multi.connectionSettings.dbType
+  : ORACLE
+  ? artConnection.Adapters_GITProject.project.adapters_git.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_Multi.connectionSettings.portNumber
+  : "1521"
+  ? artConnection.Adapters_GITProject.project.adapters_git.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_Multi.connectionManagerSettings.startupBackoffSecs
+  : "10"
+  ? artConnection.Adapters_GITProject.project.adapters_git.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_Multi.connectionSettings.networkProtocol
+  : tcp
+  ? artConnection.Adapters_GITProject.project.adapters_git.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_Multi.connectionManagerSettings.startupRetryCount
+  : "0"
+  ? artConnection.Adapters_GITProject.project.adapters_git.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_Multi.connectionSettings.trustStore
+  : ""
+  ? artConnection.Adapters_GITProject.project.adapters_git.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_Multi.connectionManagerSettings.minimumPoolSize
+  : "1"
+  ? artConnection.Adapters_GITProject.project.adapters_git.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_Multi.connectionManagerSettings.expireTimeout
+  : "1000"
+  ? artConnection.Adapters_GITProject.project.adapters_git.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_Multi.connectionSettings.serverName
+  : adapter-oracle-121-on-amazonrds.cdmjexwbzoym.us-east-1.rds.amazonaws.com
